@@ -1,1 +1,12 @@
 {% extends "base.html" %}
+{% block style %}
+    <link rel="stylesheet" type="text/css" href="../static/css/timer.css">
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <h1></h1>
+    </div>
+    <button class="play-btn">Play</button>
+    <script src="../static/js/confetti.js"></script>
+    <script type="module" src="../static/js/timer.js"></script>
+{% endblock %}
