@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %} Registration {% endblock %}
+
+{% block content %}
+
+<div class="content">
+    <form action='/register' method="post">
+        <label for="user_name">Your name:<br></label><br>
+        <input type="text" id="user_name" name="user_name" ><br>
+        <br>
+        <label for="email">E-mail<br></label><br>
+        <input type="text" id="email" name="email"><br>
+        <br>
+        <label for="user_password">Password:<br></label><br>
+        <input type="password" id="user_password" name="user_password" ><br>
+        <br>
+        <label for="repeated_password">Repeat password:<br></label><br>
+        <input type="password" id="repeated_password" name="repeated_password" ><br>
+        <br>
+        <button type="submit"  class="bn3">Register</button>
+
+    </form>
+    <br>
+    <br>
+
+</div>
+{% endblock %}

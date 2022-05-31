@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %} Start Game {% endblock %}
+
+{% block content %}
+
+</head>
+
+<body>
+
+    <button class="play-btn">Play</button>
+    <script src="../static/js/confetti.js"></script>
+    <script type="module" src="../static/js/timer.js"></script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <div class="block-title">Tangram shapes</div>
+                <div class="blockTray">
+
+                    <div id="square" class="block"></div>
+                    <div id="triangle1" class="block"></div>
+                    <div id="triangle2" class="block"></div>
+                    <div id="triangle3" class="block"></div>
+                    <div id="triangle4" class="block"></div>
+                    <div id="triangle5" class="block"></div>
+                    <div id="parallelogram" class="block"></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="Canvas-title">Canvas</div>
+                <div class="canvas-slots">
+
+                    <div class="block-slot-square"></div>
+                    <div class="block-slot-triangle1"></div>
+                    <div class="block-slot-triangle2"></div>
+                    <div class="block-slot-triangle3"></div>
+                    <div class="block-slot-triangle4"></div>
+                    <div class="block-slot-triangle5"></div>
+                    <div class="block-slot-parallelogram"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}
