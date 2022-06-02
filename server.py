@@ -1,5 +1,5 @@
-from flask import Flask, render_template, request,redirect,flash,url_for,session
-import database_common, data_manager
+from flask import Flask, render_template, request, redirect, flash, url_for, session
+import data_manager
 import bcrypt
 
 app = Flask(__name__)
@@ -25,7 +25,6 @@ def register():
         user_password = request.form['user_password']
         email = request.form['email']
         repeated_password = request.form['repeated_password']
-        session['user_name'] = request.form['user_name']
 
         user = data_manager.get_user(user_name)
         if user is not None:
@@ -38,6 +37,7 @@ def register():
 
         else:
             data_manager.register(user_name, hash_password(), email)
+            session['user_name'] = request.form['user_name']
             flash(
                 'You are now registered!')
             return redirect(url_for('start_game'))
@@ -49,8 +49,7 @@ def hash_password():
     return hashed_password.decode('utf-8')
 
 
-@app.route('/login', methods= ["GET", "POST"])
-
+@app.route('/login', methods=["GET", "POST"])
 def login():
 
     if request.method == 'GET':
@@ -59,7 +58,6 @@ def login():
         user_name = request.form['user_name']
         password = request.form['user_password']
         user = data_manager.get_user(user_name)
-
 
         if user is None:
             flash("You have to register first")
@@ -75,10 +73,14 @@ def login():
                 return render_template(url_for("login"))
 
 
-
 @app.route('/user_profile')
 def user_profile():
-    return render_template('user_profile.html')
+    username = session.get('user_name')
+    if username:
+        user = data_manager.get_user(username)
+        return render_template('user_profile.html', user=user)
+    flash('Log in to access user profile')
+    return redirect(url_for("login"))
 
 
 @app.route('/ranking')
@@ -87,4 +89,4 @@ def ranking():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)    
+    app.run(debug=True)
