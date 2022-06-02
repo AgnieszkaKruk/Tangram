@@ -1,35 +1,34 @@
+html {
+    box-sizing:border-box;
+    display:inline-block;
+}
+
+
 .block{
-    position:relative;   
-}
+    display:inline-block;
 
-.highlight {
- border:solid black;
 
 }
-.canvas-slots {
-    position:relative;
+.zone {
+
 }
 
-#square { 
-    width: 110px; 
-    height: 100px; 
-    background: #16a085; 
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
+#square {
+    width: 110px;
+    height: 100px;
+    background: #16a085;
     transform: rotate(45deg);
 }
 
-#triangle1 { 
+#triangle1 {
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 0 80px 80px 80px;
-    border-color: transparent transparent #f1c40f transparent; 
+    border-color: transparent transparent #f1c40f transparent;
 }
 
-#triangle2 { 
+#triangle2 {
     width: 0;
     height: 0;
     border-style: solid;
@@ -47,13 +46,14 @@
     top:-100px;
 }
 
-#triangle4 { 
+#triangle4 {
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 0 0 150px 150px;
     border-color: transparent transparent #d63294 transparent;
     top:-300px;
+
 }
 
 #triangle5 {
@@ -86,9 +86,9 @@
     background-color: #ecf0f1;
     margin:3%;
     border-radius: 30px;
-   
-  
-    
+
+
+
 }
 
 .canvas-slots {
@@ -107,53 +107,68 @@ html, body {
     height:100%;
     width:100%;
     justify-content: center;
-    background-size: cover; 
+    background-size: cover;
 }
 
-.block-slot-square {
-    width: 110px; 
-    height: 100px; 
-    background: #595a5a; 
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+#slot-square {
+    width: 100px;
+    height: 100px;
+    background: #595a5a;
+    transform: rotate(0deg);
+    transform-origin: bottom;
+    position:absolute;
+    top:100px;
+    left:170px;
+
 
 }
-.block-slot-triangle1 {
+#slot-triangle1 {
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 0 80px 80px 80px;
-    background: #595a5a; 
-    border-color: transparent; 
+    border-color: transparent transparent #595a5a transparent;
+    transform: rotate(45deg);
+    position:absolute;
+    top:100px;
+    left:320px;
+
 }
-.block-slot-triangle2{
+#slot-triangle2{
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 150px 0 150px 150px;
     border-color: transparent  #595a5a;
-    top:-100px;
+    transform: rotate(90deg);
+    position:absolute;
+    top:125px;
+    left:150px;
 }
-.block-slot-triangle3{
+#slot-triangle3{
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 150px 150px 0 150px;
     border-color: #595a5a transparent;
-    top:-100px;
+    transform: rotate(90deg);
+    position:absolute;
+    top:274px;
+    left:150px;
+
 }
-.block-slot-triangle4 {
+#slot-triangle4 {
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 0 0 150px 150px;
     border-color: transparent  #595a5a ;
-    top:-300px;
+    transform: rotate(0deg);
+    position:absolute;
+    top:400px;
+    left:150px;
 }
-.block-slot-triangle5 {
+#slot-triangle5 {
     width: 0;
     height: 0;
     border-style: solid;
@@ -162,7 +177,7 @@ html, body {
     top: -350px;
 }
 
-.block-slot-parallelogram {
+#slot-parallelogram {
     width: 150px;
     height: 70px;
     transform:rotate(-45deg);
@@ -171,4 +186,14 @@ html, body {
          -o-transform: skew(-45deg);
     background: #595a5a;
     top:-600px;
+}
+
+.container {
+    display:flex;
+    flex-direction:row;
+}
+
+.canvas-slots {
+    border:0px;
+    position:relative;
 }
