@@ -16,6 +16,15 @@ def start_game():
     return render_template('start_game.html')
 
 
+@app.route('/start_game2')
+def start_game2():
+    return render_template('start_game2.html')
+
+
+@app.route('/start_game3')
+def start_game3():
+    return render_template('start_game3.html')
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == 'GET':
