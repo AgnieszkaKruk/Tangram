@@ -85,6 +85,14 @@ def login():
 
 
 
+@app.route('/logout', methods=["GET", "POST"])
+def logout():
+    if 'user_name' in session:
+        session.pop('user_name', None)
+        flash('You are logged out')
+    return render_template('logout.html')
+
+
 @app.route('/user_profile')
 def user_profile():
     username = session.get('user_name')

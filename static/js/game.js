@@ -88,7 +88,6 @@ function handleDrop(ev) {
 function check_winnig () {
     if (numbers_of_replaced === 7) {
         win()
-        document.getElementById("slot-square").classList.add("slot-square2")
         return true
 
     }
