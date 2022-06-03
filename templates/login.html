@@ -1,2 +1,22 @@
 {% extends "base.html" %}
 
+{% block title %} Log in {% endblock %}
+
+{% block content %}
+<div>
+    <form action='/login' method="post">
+
+        <label for="user_name">User name:<br></label><br>
+        <input type="text" id="user_name" name="user_name"><br>
+        <br>
+        <label for="user_password">Password:<br></label><br>
+        <input type="password" id="user_password" name="user_password" ><br>
+        <br>
+
+        <button type="submit" >Log in</button>
+    </form>
+    <br>
+    <br>
+
+</div>
+{% endblock %}

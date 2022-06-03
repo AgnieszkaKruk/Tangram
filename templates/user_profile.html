@@ -1,1 +1,48 @@
 {% extends "base.html" %}
+{% block style %}
+    <style>
+        .bd-placeholder-img {
+            margin-top: 35px;
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+    </style>
+<link href="../static/css/user_profile.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="text-center">
+
+<main class="form-signin w-100 m-auto">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-8">
+                <div class="bd-placeholder-img">
+                    <img src="https://img.icons8.com/color/452/user-male.png" width="70" height="70" alt="user's avatar">
+                    <div class="name">{{ user.user_name }}</div>
+
+{#                    <div class="actions">#}
+{#                        <button class="btn">Follow</button>#}
+{#                        <button class="btn">Message</button>#}
+{#                    </div>#}
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">{{ user.email }} Email</p>
+                    <p class="card-text">{{ user.ranking }} Ranking</p>
+                    <p class="card-text">{{ user.user_scores }} User scores</p>
+{#                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>#}
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+</div>
+{% endblock %}
