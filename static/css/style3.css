@@ -9,26 +9,11 @@ html {
 
 }
 
-.show {
-    display: block !important;
-    text-align: center;
-}
-.your_score {
-    display: none;
-}
-.red-color {
-    color: red;
-}
-.lose {
-  display: none;
-}
-.invisible {
-   display: none;
-}
+/* }
+.zone {
 
-#scores {
-    text-align: center;
-}
+} */
+
 #square {
     width: 100px;
     height: 100px;
@@ -126,35 +111,24 @@ html, body {
     width: 100px;
     height: 100px;
     background: #595a5a;
-    transform: rotate(0deg);
-    /* transform-origin: bottom; */
-    position:absolute;
-    top:100px;
-    left:140px;
-
-
-}
-.slot-square2 {
-    width: 100px;
-    height: 100px;
-    background: #595a5a;
     transform: rotate(45deg);
     /* transform-origin: bottom; */
-    position: absolute;
-    top: 126px;
-    left: 394px;
-}
+    position:absolute;
+    top:120px;
+    left:260px;
 
+
+}
 #slot-triangle1 {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 75px 75px 75px;
+    border-width: 0 70px 70px 70px;
     border-color: transparent transparent #595a5a transparent;
-    transform: rotate(180deg);
+    transform: rotate(90deg);
     position:absolute;
-    top:315px;
-    left:275px;
+    top:65px;
+    left:205px;
     /* position:relative; */
     z-index: 1;
 
@@ -165,10 +139,10 @@ html, body {
     border-style: solid;
     border-width: 150px 0 150px 150px;
     border-color: transparent  #595a5a ;
-    transform: rotate(270deg);
+    transform: rotate(135deg);
     position:absolute;
-    top:90px;
-    left:200px;
+    top: 329px;
+    left:68px;
 }
 #slot-triangle3{
     width: 0;
@@ -176,10 +150,10 @@ html, body {
     border-style: solid;
     border-width: 150px 150px 0 150px;
     border-color: #595a5a transparent ;
-    transform: rotate(180deg);
+    transform: rotate(90deg);
     position:absolute;
-    top:315px;
-    left:125px;
+    top:245px;
+    left:15px;
 
 }
 #slot-triangle4 {
@@ -188,22 +162,22 @@ html, body {
     border-style: solid;
     border-width: 0 0 150px 150px;
     border-color: transparent  #595a5a  ;
-    /* transform: rotate(180deg);   */
+    transform: rotate(135deg);
     position:absolute;
-    top:315px;
-    left:125px;
+    top:200px;
+    left:164px;
 
 }
 #slot-triangle5 {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 75px 75px 75px 0;
+    border-width: 70px 70px 70px 0;
     border-color: transparent #595a5a transparent transparent;
-    /* transform: rotate(0deg); */
+    transform: rotate(0deg);
     position:absolute;
-    top:315px;
-    left:350px;
+    top:30px;
+    left:311px;
     z-index:  2;
 
 
@@ -216,9 +190,10 @@ html, body {
     text-align: center;
     background: #595a5a;
     transform: skewX(-45deg);
+
     position:absolute;
-    top:96px;
-    left:310px;
+    top:462px;
+    left:335px;
 
 }
 

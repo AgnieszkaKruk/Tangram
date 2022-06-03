@@ -78,12 +78,12 @@ def login():
 
 @app.route('/user_profile')
 def user_profile():
-    return render_template('user_profile.html')
-
-
-@app.route('/ranking')
-def ranking():
-    return render_template('ranking.html')
+    username = session.get('user_name')
+    if username:
+        user = data_manager.get_user(username)
+        return render_template('user_profile.html', user=user)
+    flash('Log in to access user profile')
+    return redirect(url_for("login"))
 
 
 if __name__ == '__main__':

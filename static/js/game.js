@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 let numbers_of_replaced = 0
 
+
 function initDragAndDrop() {
     initElements();
     // shuffleCards();
@@ -69,6 +70,7 @@ function handleDrop(ev) {
         element.style.borderColor = bor
         numbers_of_replaced++
         check_winnig()
+        show_scores()
     }
    
     // ev.target.appendChild(element);
@@ -86,6 +88,8 @@ function handleDrop(ev) {
 function check_winnig () {
     if (numbers_of_replaced === 7) {
         win()
+        document.getElementById("slot-square").classList.add("slot-square2")
+        return true
 
     }
 }
@@ -100,5 +104,19 @@ function checkShape(el) {
     return el.parentElement.className.startsWith('canvas')
 }
 
-//https://javascript.info/localstorage
-//https://www.w3schools.com/howto/howto_js_redirect_webpage.asp
+
+function show_scores() {
+    if (check_winnig()) {
+        console.log(localStorage)
+        let user_scores = localStorage.getItem("user_scores")
+        user_scores = Number(user_scores) + 10
+
+        localStorage.setItem("user_scores", user_scores);
+
+        document.getElementById("scores").innerHTML = localStorage.getItem("user_scores")
+
+        document.querySelector(".your_score").classList.add("show")
+    }
+
+}
+
