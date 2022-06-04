@@ -22,8 +22,9 @@ function start(minutes) {
     clock_interval = setInterval(() => {
         render();
         if (game_over_time <= new Date()) {
-            stop();
-            lose()
+            if (!checkWinnig()) {
+                lose()}
+            stop()
 
         }
     }, ONE_SECOND);
@@ -68,6 +69,9 @@ function win() {
 
     start();
     stop();
+    setTimeout(function () {
+        window.location.href = "/start_game";},
+        5000);
 }
 
 function lose() {

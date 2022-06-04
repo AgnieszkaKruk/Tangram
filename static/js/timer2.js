@@ -8,7 +8,7 @@ let audio_lose = new Audio('../static/music/lose.mp3')
 let $clock_h1 = document.querySelector('h1');
 let $button = document.getElementsByClassName('play-btn')[0]
 
-setup(0.4);
+setup(0.5);
 
 function setup(minutes) {
     initButton(minutes);
@@ -22,8 +22,9 @@ function start(minutes) {
     clock_interval = setInterval(() => {
         render();
         if (game_over_time <= new Date()) {
-            stop();
-            lose()
+            if (!checkWinnig()) {
+                lose()}
+            stop()
 
         }
     }, ONE_SECOND);
@@ -68,6 +69,9 @@ function win() {
 
     start();
     stop();
+    setTimeout(function () {
+        window.location.href = "/start_game3";},
+        5000);
 }
 
 function lose() {

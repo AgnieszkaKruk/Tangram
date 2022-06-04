@@ -23,7 +23,7 @@ html {
   display: none;
 }
 .invisible {
-   display: none;
+   display: none !important;
 }
 
 #scores {
