@@ -1,3 +1,5 @@
+borad = 1
+
 document.addEventListener('DOMContentLoaded', (event) => {
     initDragAndDrop();
   });
@@ -67,8 +69,11 @@ function handleDrop(ev) {
         ev.target.parentNode.replaceChild(element,ev.target)
         element.style.backgroundColor = bg
         element.style.borderColor = bor
+        // element.classList.add('board'+ 1)
         numbers_of_replaced++
         check_winnig()
+
+
     }
    
     // ev.target.appendChild(element);
@@ -83,9 +88,10 @@ function handleDrop(ev) {
 
     }
 
-function check_winnig () {
+function check_winnig (board) {
     if (numbers_of_replaced === 7) {
         win()
+
 
     }
 }

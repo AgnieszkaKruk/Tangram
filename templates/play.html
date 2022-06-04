@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %} <div class="title">Choose a shape: </div>{% endblock %}
+
+{% block content %}
+
+<div class="content" >
+
+<div class="board_1">
+<div><img class="house" src="static/images/board 1.png"></div><br>
+    <div><button onclick="location.href='/start_game'" class="button" type="button">Board 1</button></div>
+</div>
+
+
+<div class="board_2">
+    <div><img class="bird" src="static/images/board 2.png"></div><br>
+        <div>
+            <button onclick="location.href='/start_game2'" class="button" type="button">Board 2</button>
+        </div></div>
+
+
+<div class="board_3">
+   <div> <img class="cat"  src="static/images/board 3.png"></div><br>
+
+             <button onclick="location.href='/start_game3'" class="button" type="button">Board 3</button>
+</div>
+</div>
+    </div>
+{% endblock %}

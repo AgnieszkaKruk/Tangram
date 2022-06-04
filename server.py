@@ -16,6 +16,18 @@ def index():
 def start_game():
     return render_template('start_game.html')
 
+@app.route('/start_game2')
+def start_game2():
+    return render_template('start_game2.html')
+
+
+@app.route('/start_game3')
+def start_game3():
+    return render_template('start_game3.html')
+
+@app.route('/play')
+def play():
+    return render_template('play.html')
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -90,6 +102,8 @@ def user_profile():
 @app.route('/ranking')
 def ranking():
     return render_template('ranking.html')
+
+
 
 
 if __name__ == '__main__':

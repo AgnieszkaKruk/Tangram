@@ -1,18 +1,26 @@
+.welcome_page{
+    background-image: url("/static/images/background.png");
+}
+
+
 html {
+
     box-sizing:border-box;
     display:inline-block;
+
+}
+html, body {
+    height:100%;
+    width:100%;
+    justify-content: center;
+    background-size: cover;
+
 }
 
 
-.block{
-    display:inline-flex;
-
+.block {
+    display: inline-flex;
 }
-
-/* }
-.zone {
-
-} */
 
 #square {
     width: 100px;
@@ -107,7 +115,7 @@ html, body {
     background-size: cover;
 }
 
-#slot-square {
+#slot-square{
     width: 100px;
     height: 100px;
     background: #595a5a;
@@ -119,7 +127,7 @@ html, body {
 
 
 }
-#slot-triangle1 {
+#slot-triangle1  {
     width: 0;
     height: 0;
     border-style: solid;
@@ -133,7 +141,7 @@ html, body {
     z-index: 1;
 
 }
-#slot-triangle2{
+#slot-triangle2 {
     width: 0;
     height: 0;
     border-style: solid;
@@ -144,7 +152,7 @@ html, body {
     top:90px;
     left:200px;
 }
-#slot-triangle3{
+#slot-triangle3 {
     width: 0;
     height: 0;
     border-style: solid;
@@ -207,3 +215,106 @@ html, body {
     border:0px;
     position:relative;
 }
+
+
+
+
+
+
+
+.content {
+    display: inline;
+    text-align:center;
+    justify-content: center;
+     /*background-position: center;*/
+    /*margin-top:200px;*/
+    /*margin-right: 300px;*/
+    /*margin-left: 300px;*/
+    /*margin-left: 300px;*/
+    /*margin-right: 300px;*/
+    padding-bottom:100px;
+}
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    text-align: center;
+    margin-top:100px;
+}
+.title_main {
+    font-family: "Arial Black";
+    font-size: 230px;
+    text-align: center;
+    /*justify-content: center;*/
+    margin-top:300px;
+    color: black;
+
+
+}
+
+
+/*img {*/
+/*    display: inline-block;*/
+
+
+/*}*/
+/*.board_1 {*/
+/*    float:left;*/
+
+
+/*    !*margin-top: 100px;*!*/
+/*}*/
+
+/*.board_3 {*/
+/*    float:right;*/
+
+
+/*    !*margin-top: 500px;*!*/
+/*}*/
+
+/*.board_2 {*/
+/*    display:inline-block;*/
+
+
+
+/*    !*margin-top: 100px;*!*/
+/*}*/
+
+.btn  {
+    margin:5px;
+    float:right;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.7em 1.9em;
+  margin: 0 0.3em 0.3em 0;
+  border: 0.16em solid rgb(255, 255, 255);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: white;
+  background-color: black;
+  text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+  text-align: center;
+  transition: all 0.2s;
+
+}
+
+.button:hover {
+  color: white;
+  background-color: #2fa875;
+}
+
+.house {
+    width:500px;
+}
+.bird {
+    width:510px;
+}
+.cat {
+    width:505px;
+}
+
+

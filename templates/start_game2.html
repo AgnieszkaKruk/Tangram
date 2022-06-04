@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 
-{% block title %} <div class="title">House</div>{% endblock %}
+{% block title %} <div class="title">Bird</div> {% endblock %}
 
 {% block content %}
 
 
-
+<link rel="stylesheet" href="/static/css/style2.css">
 <body>
 
-
     <button class="play-btn">Play</button>
+
 
 
 
@@ -33,18 +33,22 @@
 
     <div class="canvas-slots">
 
-        <div id="slot-square" class="zone " ></div>
-        <div id="slot-triangle1" class="zone "></div>
-        <div id="slot-triangle2" class="zone "></div>
-        <div id="slot-triangle3" class="zone "></div>
-        <div id="slot-triangle4" class="zone "></div>
-        <div id="slot-triangle5" class="zone "></div>
-        <div id="slot-parallelogram" class="zone "></div>
+        <div id="slot-square" class="zone"></div>
+        <div id="slot-triangle1" class="zone"></div>
+        <div id="slot-triangle2" class="zone"></div>
+        <div id="slot-triangle3" class="zone"></div>
+        <div id="slot-triangle4" class="zone"></div>
+        <div id="slot-triangle5" class="zone"></div>
+        <div id="slot-parallelogram" class="zone"></div>
     </div>
 </div>
 </div>
+
+{#    <h2 class="your_score"> Your score:</h2>  <h2 id="scores"></h2>#}
+{#    <h2 class="lose"> You lose! Try again!</h2>#}
+    <button class="play-btn invisible">Play again!</button>
   <script src="{{ url_for('static', filename='js/confetti.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/timer.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/timer2.js') }}"></script>
 </body>
 
 

@@ -3,12 +3,12 @@ const ONE_SECOND = 1000;
 let clock_interval = null;
 let game_over_time = null;
 let audio = new Audio('../static/music/kahoot.mp3');
-let audio_win = new Audio('../static/music/oklaski.mp3.mp3')
-let audio_lose = new Audio('../static/music/lose.mp3.mp3')
+let audio_win = new Audio('../static/music/oklaski.mp3')
+let audio_lose = new Audio('../static/music/lose.mp3')
 let $clock_h1 = document.querySelector('h1');
 let $button = document.getElementsByClassName('play-btn')[0]
 
-setup(0.5);
+setup(0.3);
 
 function setup(minutes) {
     initButton(minutes);
