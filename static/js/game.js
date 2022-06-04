@@ -82,7 +82,7 @@ function show_scores() {
 
         document.getElementById("scores").innerHTML = localStorage.getItem("user_scores")
 
-        document.querySelector(".your_score").classList.add("show")
+        document.querySelector(".your_score").classList.add("show", "blue-color")
     }
 }
 
