@@ -142,7 +142,7 @@ html, body {
     transform: rotate(135deg);
     position:absolute;
     top: 329px;
-    left:68px;
+    left:69px;
 }
 #slot-triangle3{
     width: 0;
@@ -176,7 +176,7 @@ html, body {
     border-color: transparent #595a5a transparent transparent;
     transform: rotate(0deg);
     position:absolute;
-    top:30px;
+    top:31px;
     left:311px;
     z-index:  2;
 

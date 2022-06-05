@@ -1,11 +1,7 @@
 .welcome_page{
-    background-image: url("/static/images/background.png");
-    /*position: fixed;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*width: 50%;*/
-    /*height: 100%;*/
-
+    background-image: url("/static/images/background2.png");
+    align-content: center;
+    text-align: center;
 
 }
 
@@ -313,7 +309,7 @@ html, body {
     border-color: #595a5a transparent ;
     transform: rotate(180deg);
     position:absolute;
-    top:315px;
+    top:314px;
     left:125px;
 
 }
@@ -338,7 +334,7 @@ html, body {
     /* transform: rotate(0deg); */
     position:absolute;
     top:315px;
-    left:350px;
+    left:349px;
     z-index:  2;
 
 
@@ -398,7 +394,7 @@ html, body {
     font-size: 230px;
     text-align: center;
     /*justify-content: center;*/
-    margin-top:300px;
+    margin-top:200px;
     color: black;
 
 
@@ -475,19 +471,24 @@ html, body {
     opacity: 0.8;
     padding: 30px;
     background-color: white;
-
-    margin-left: 400px;
-    margin-right: 400px;
-    /*display: flex;*/
-    align-items: center;
+    width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     display: block;
     flex-basis: 40%;
+    border-radius:30px;
 }
 
 .play-btn {
-    position:center;
+    display:inline;
+
+
+
 }
 
-
+.logo {
+    width:1000px;
+}

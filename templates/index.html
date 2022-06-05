@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %} <div class="title_main">Tangram</div>{% endblock %}
+{% block title %} <div class="title_main"><img class="logo" src="static/images/tangram logo.png"></div>{% endblock %}
 
 {% block content %}
 <body class="welcome_page">
@@ -8,6 +8,7 @@
 The tangram rules are just as simple. The pieces must all be connected.
     They must be flat. No pieces may overlap.
     The tans may also be rotated and/or flipped to form the shape.
-    All seven tans must be used. Each completed puzzle must contain all seven tans.</p></div>
+    All seven tans must be used. Each completed puzzle must contain all seven tans.</p>
+    </div><br><div><button onclick="location.href='/start_game'" class="button play" type="button">PLAY</button></div>
     </body>
 {% endblock %}

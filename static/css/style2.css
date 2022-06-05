@@ -1,6 +1,7 @@
 html {
     box-sizing:border-box;
     display:inline-block;
+
 }
 
 
@@ -142,7 +143,7 @@ html, body {
     transform: rotate(-135deg);
     position:absolute;
     top: 150px;
-    left:210px;
+    left:209px;
 }
 #slot-triangle3{
     width: 0;
@@ -177,7 +178,7 @@ html, body {
     transform: rotate(90deg);
     position:absolute;
     top:141px;
-    left:480px;
+    left:479px;
     z-index:  2;
 
 
