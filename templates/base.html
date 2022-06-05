@@ -69,11 +69,11 @@
 
 
 
-
+ <div class="flashes" >
       {%  for message in get_flashed_messages() %}
             {{ message }}
     {% endfor %}
-
+</div>
     <h1> {% block title %}  {% endblock %}</h1>
    {% block content %}  {% endblock %}
 
